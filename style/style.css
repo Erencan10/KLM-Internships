@@ -1,0 +1,252 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    }
+
+
+header {
+    background-color: #005baa;
+    color: white;
+    padding: 10px 20px;
+    
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */ 
+}
+
+
+header .logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #003f7d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: auto;
+}
+.map-section {
+    padding: 20px;
+    line-height: 1.6;
+}
+ 
+.map-step {
+    margin-bottom: 20px;
+}
+
+
+.map-step h3 {
+    color: #005baa;
+}
+
+
+.map-image img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.schedule-section {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #005baa;
+    color: white;
+}
+
+
+.schedule-banner img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.em-section, .airframe-section, .engine-services-section, .component-services-section, .mrolab-section {
+    margin: 20px 0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.image-container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #005baa;
+}
+.innovation-section {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.image-container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-section {
+    margin: 30px 0;
+}
+
+
+.video-section h3 {
+    color: #005baa;
+}
+.btn {
+    display: inline-block;
+    background-color: #005baa;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+margin: 20px 0;
+}
+
+
+.btn:hover {
+background-color: #003f7d;
+}
+
+
+/* General styling for the FAQ section */
+
+.faq-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #e9ecef;
+    }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f1f3f5;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-question:hover {
+    background-color: #e9ecef;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .faq-answer.open {
+    max-height: 200px; /* Adjust for longer answers */
+    padding: 15px 20px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow.open {
+    transform: rotate(90deg);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-question {
+      font-size: 14px;
+      padding: 15px;
+    }
+
+    .faq-answer {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .faq-container {
+      max-width: 90%;
+    }
+  }
